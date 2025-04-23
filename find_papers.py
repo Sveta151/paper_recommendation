@@ -48,7 +48,7 @@ def print_results(results, show_abstract=False):
 
 
 
-# -------- Query Loop --------
+# Query 
 print("Type your query and press Enter.")
 print("Use the following optional flags:")
 print("  --abstract     to show abstracts")
@@ -66,11 +66,9 @@ while True:
     show_abstract = "--abstract" in user_input
     spotlight_only = "--spotlight" in user_input
 
-    # Extract --number=X (default to 10)
     number_match = re.search(r"--number=(\d+)", user_input)
     top_k = int(number_match.group(1)) if number_match else 10
 
-    # Clean the query string
     cleaned_query = (
         user_input.replace("--abstract", "")
                   .replace("--spotlight", "")
