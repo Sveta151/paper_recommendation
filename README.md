@@ -29,12 +29,13 @@ python find_papers.py
 
 It may take some time to load the model the first time. Once loaded, you can enter queries in the terminal.
 
-Features
-	•	Displays title, authors, and a direct link to the paper.
-	•	Optional flags:
-	•	--abstract to show abstracts
-	•	--spotlight to filter only spotlight papers
-	•	--number=20 to control the number of returned results (default is 10)
+## Features
+
+- Displays title, authors, and a direct link to the paper.
+- Optional flags:
+  - `--abstract` to show abstracts
+  - `--spotlight` to filter only spotlight papers
+  - `--number=20` to control the number of returned results (default is 10)
 
 **Example:**
 `Query: multimodal models --abstract --spotlight --number=15`
